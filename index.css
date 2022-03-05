@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+html {
+    height: 100%;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient( #585752, #F7931A);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+    font-size: 62.5%;
+    font-family: 'Poppins';
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        margin: 90px 10px;
+    }
+    .main__title {
+        width: 350px;
+        color: white;
+        margin: 0;
+        font-size: 3em;
+    }
+    .main__subTitle {
+        text-align: center;
+        font-size: 2em;
+        font-style: italic;
+        text-decoration: underline;
+    }
+    .service {
+        display: block;
+        width: 90%;
+        background-color: grey;
+        margin-bottom: 8px;
+        border-radius: 15px;
+        margin: 10px auto;
+        object-fit: cover;
+    }
+    .contact a,
+    .contact img {
+        display: block;
+        margin: 0 auto;
+    }
+    .contact {
+        display: flex;
+    }
+}
+
+h1.typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .11em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact img {
+    cursor: pointer;
+}
